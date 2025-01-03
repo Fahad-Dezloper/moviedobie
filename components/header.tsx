@@ -26,7 +26,7 @@ export function Header({ searchQuery, setSearchQuery, selectedGenre, onGenreSele
           />
         </div>
         <div>
-        <h1 className="text-white text-2xl font-semibold font-mono">Moviee Dobieee</h1>
+        <h1 className="text-white text-2xl font-semibold font-mono md:hidden sm:hidden">Moviee Dobieee</h1>
         </div>
       </div>
       <GenreFilter selectedGenre={selectedGenre} onGenreSelect={onGenreSelect} />
