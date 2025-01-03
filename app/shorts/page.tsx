@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { fetchMovies } from '../actions'
 import { MovieCard } from '@/components/movie-card'
 

@@ -6,7 +6,7 @@ export async function searchMovies(query: string = '', pageToken?: string) {
     maxResults: '20',
     q: query ? `${query} movie trailer` : 'new movie trailer 2024',
     type: 'video',
-    videoCategoryId: '1', // Film & Animation category
+    videoCategoryId: '1', 
     key: process.env.YOUTUBE_API_KEY!,
     ...(pageToken && { pageToken }),
   });
