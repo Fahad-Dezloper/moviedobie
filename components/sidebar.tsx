@@ -1,4 +1,4 @@
-import { Youtube, Home, Compass, Clock, Film, Flame, Star } from 'lucide-react'
+import { Youtube, Home, Compass, Clock, Flame, Star } from 'lucide-react'
 import Link from "next/link"
 
 export function Sidebar() {
