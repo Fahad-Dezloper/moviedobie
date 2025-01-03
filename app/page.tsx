@@ -133,7 +133,7 @@ export default function Home() {
                 ))
               ) : (
                 trendingVideos.map((video, i) => (
-                  <MovieCard key={video.id.videoId} video={video} delay={i * 0.1} onSave={handleSaveVideo} />
+                  <MovieCard key={video.id.videoId} video={video} delay={i * 0.1} />
                 ))
               )}
             </div>

@@ -4,6 +4,7 @@ import { Search } from 'lucide-react'
 import { Input } from "@/components/ui/input"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { GenreFilter } from "@/components/genre-filter"
+import { Badge } from './ui/badge'
 
 interface HeaderProps {
   searchQuery: string
@@ -15,7 +16,7 @@ interface HeaderProps {
 export function Header({ searchQuery, setSearchQuery, selectedGenre, onGenreSelect }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 bg-zinc-900/95 backdrop-blur-sm border-b border-white/10">
-      <div className="flex items-center gap-4 p-4">
+      <div className="flex items-center justify-between gap-4 p-4">
         <div className="relative flex-1 max-w-xl">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400" size={20} />
           <Input
@@ -26,10 +27,9 @@ export function Header({ searchQuery, setSearchQuery, selectedGenre, onGenreSele
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </div>
-        <Avatar className="h-10 w-10">
-          <AvatarImage src="/placeholder.svg" />
-          <AvatarFallback>YT</AvatarFallback>
-        </Avatar>
+        <div>
+        <h1 className="text-white text-2xl font-semibold font-mono">Moviee Dobieee</h1>
+        </div>
       </div>
       <GenreFilter selectedGenre={selectedGenre} onGenreSelect={onGenreSelect} />
     </header>
