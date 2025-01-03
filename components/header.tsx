@@ -2,9 +2,7 @@
 
 import { Search } from 'lucide-react'
 import { Input } from "@/components/ui/input"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { GenreFilter } from "@/components/genre-filter"
-import { Badge } from './ui/badge'
 
 interface HeaderProps {
   searchQuery: string
